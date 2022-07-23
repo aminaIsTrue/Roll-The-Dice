@@ -51,8 +51,19 @@ btnRoll.addEventListener('click', function () {
 
     // 2. Display dice
     diceEl.classList.remove('hidden');
-
-    diceEl.src = `dice-${dice}.44e9dd05.png`;
+    if (dice === 1) {
+      diceEl.src = `dice-${dice}.7926019c.png`;
+    } else if (dice === 2) {
+      diceEl.src = `dice-${dice}.ffafe97e.png`;
+    } else if (dice === 3) {
+      diceEl.src = `dice-${dice}.19e37284.png`;
+    } else if (dice === 4) {
+      diceEl.src = `dice-${dice}.6a183866.png`;
+    } else if (dice === 5) {
+      diceEl.src = `dice-${dice}.44e9dd05.png`;
+    } else {
+      diceEl.src = `dice-${dice}.f7239506.png`;
+    }
 
     // 3. Check for rolled 1
     if (dice !== 1) {
