@@ -1,5 +1,10 @@
 'use strict';
-
+import dice1 from 'url:./dice-1.png';
+import dice2 from 'url:./dice-2.png';
+import dice3 from 'url:./dice-3.png';
+import dice4 from 'url:./dice-4.png';
+import dice5 from 'url:./dice-5.png';
+import dice6 from 'url:./dice-6.png';
 // Selecting elements
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
@@ -52,17 +57,17 @@ btnRoll.addEventListener('click', function () {
     // 2. Display dice
     diceEl.classList.remove('hidden');
     if (dice === 1) {
-      diceEl.src = `dice-${dice}.7926019c.png`;
+      diceEl.src = dice1;
     } else if (dice === 2) {
-      diceEl.src = `dice-${dice}.ffafe97e.png`;
+      diceEl.src = dice2;
     } else if (dice === 3) {
-      diceEl.src = `dice-${dice}.19e37284.png`;
+      diceEl.src = dice3;
     } else if (dice === 4) {
-      diceEl.src = `dice-${dice}.6a183866.png`;
+      diceEl.src = dice4;
     } else if (dice === 5) {
-      diceEl.src = `dice-${dice}.44e9dd05.png`;
+      diceEl.src = dice5;
     } else {
-      diceEl.src = `dice-${dice}.f7239506.png`;
+      diceEl.src = dice6;
     }
 
     // 3. Check for rolled 1
