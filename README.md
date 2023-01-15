@@ -2,6 +2,8 @@
 
 ## My second game (DOM manipulation and Events fundamentals)
 
+### Take a look: https://roll-the-dice-pig-game.netlify.app/
+
 Two persons can play the game:
 
 - Player 1 starts rolling the dice and can hold the results
